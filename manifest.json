@@ -1,0 +1,9 @@
+{
+  "manifest_version": 2,
+  "name": "nds_de_lang",
+  "version": "1.0",
+  "description": "Mozilla Firefox dictionary add-on for the low german language (nds).",
+  "dictionaries": {
+    "nds-DE": "dict/nds_de.dic"
+  }
+}
