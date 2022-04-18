@@ -1,0 +1,3 @@
+[submodule "dict_nds"]
+	path = dict_nds
+	url = ../../tdf/dict_nds
