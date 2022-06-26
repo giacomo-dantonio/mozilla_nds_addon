@@ -11,6 +11,19 @@ This add-on uses LibreOffice's hunspell dictionary for low german,
 which you can find [at this repository](https://github.com/tdf/dict_nds).
 Its developers did a great work in crafting this dictionary.
 
+## How to build
+
+The actual hunspell dictionaries are build from 
+[the Libreoffice repository](https://github.com/tdf/dict_nds).
+This is done using make (have a look at the [Makefile](./Makefile) for details).
+
+To build the dictionary follow these steps:
+
+1. Make sure to check out the git submodule [dict_nds](./dict_nds/).
+2. Open the root folder of this repository in a shell and type `make`.
+3. If the dictionary was build successfully,
+   you will see a `firefox_nds_dict.zip` containing the add-on distributable.
+
 ## Known issues
 
 When you load the add-on in Firefox, the browser will show the dictionary

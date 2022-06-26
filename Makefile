@@ -1,5 +1,9 @@
 OUTDIR:=dict
 SUBMODDIR:=dict_nds
+OUTZIP:=firefox_nds_dict.zip
+
+$(OUTZIP): $(OUTDIR)/nds_de.dic
+	zip firefox_nds_dict.zip manifest.json dict/*
 
 $(OUTDIR)/nds_de.dic: $(OUTDIR)/nds_de.aff
 	mkdir -p $(OUTDIR); cp $(SUBMODDIR)/dist/nds_de.dic $(OUTDIR)/
@@ -11,4 +15,4 @@ submod:
 	cd $(SUBMODDIR); make
 
 .PHONY: all
-all: $(OUTDIR)/nds_de.dic $(OUTDIR)/nds_de.aff
+all: $(OUTZIP) $(OUTDIR)/nds_de.dic $(OUTDIR)/nds_de.aff
