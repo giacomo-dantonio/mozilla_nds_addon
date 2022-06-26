@@ -1,9 +1,14 @@
 {
-  "manifest_version": 2,
-  "name": "nds_de_lang",
-  "version": "1.0",
-  "description": "Mozilla Firefox dictionary add-on for the low german language (nds).",
+  "description": "This add-on adds a low german dictionary to Firefox's spell checker. The low german language is also known under the names Plattdüütsch, Plattdeutsch, Niederdeutsch, Niedersächsisch, Sächsisch and according to the ISO 639-2 norm has the language code nds. This add-on uses LibreOffice's hunspell dictionary for low german, which you can find at https://github.com/tdf/dict_nds. Shoutout to its developers: they did a great work with that!",
   "dictionaries": {
     "nds-DE": "dict/nds_de.dic"
-  }
+  },
+  "homepage_url": "https://github.com/giacomo-dantonio/mozilla_nds_addon",
+  "icons": {
+    "32": "icons/icon32.png",
+    "64": "icons/icon64.png"
+  },
+  "manifest_version": 2,
+  "name": "Low german spell checking dictionary (Plattdüütsch)",
+  "version": "1.0"
 }
