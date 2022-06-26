@@ -4,10 +4,6 @@
     "nds-DE": "dict/nds_de.dic"
   },
   "homepage_url": "https://github.com/giacomo-dantonio/mozilla_nds_addon",
-  "icons": {
-    "32": "icons/icon32.png",
-    "64": "icons/icon64.png"
-  },
   "manifest_version": 2,
   "name": "Low german spell checking dictionary (Plattdüütsch)",
   "version": "1.0"
